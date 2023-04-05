@@ -1,7 +1,5 @@
 import Navbar from "@/src/Navbar";
 import Head from "next/head";
-import Image from "next/image";
-import Hero from "../public/img/hero.png";
 import ImageModal from "./imagemodal";
 
 export default function Home() {
@@ -13,46 +11,28 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col text-white">
+      <main className="flex flex-col text-clr2">
         <Navbar />
-        <div className="flex text-white">
-          <div className="flex flex-col w-3/5 min-h-screen bg-slate-800 justify-center text-2xl text-left pl-20 pr-20 font-semibold">
-            <div className="bg-white h-2 w-20 rounded-md mb-2" />
-            <h1 className="text-6xl">My Life</h1>
-            <p className="font-thin pt-6">
-              Proin porttitor interdum mi, ut tempor tortor placerat ut.
-              Suspendisse dolor est, lacinia congue egestas et, malesuada non
-              risus. Sed aliquet, ante et molestie pretium, eros magna malesuada
-              justo, sed congue arcu elit vel nisl. Duis fermentum dolor sed
-              ullamcorper tincidunt. Etiam vehicula, neque nec porta aliquam,
-              lacus nisi fringilla enim, nec vehicula ante eros sed ex.
-              Suspendisse tincidunt urna ut pharetra hendrerit. Nam at laoreet
-              quam. Morbi ac interdum nunc.
-            </p>
-            <div className="bg-white h-2 w-20 rounded-md mb-2 mt-10" />
-            <h1 className="text-6xl">What I'm good at</h1>
-            <div className="flex font-thin pt-6 space-x-44 space-y">
-              <div>
-                {" "}
-                <p>This</p>
-                <p>This</p>
-                <p>This</p>
-              </div>
-              <div>
-                {" "}
-                <p>This</p>
-                <p>This</p>
-                <p>This</p>
-              </div>
+        <div className="flex text-clr2">
+          <div className="flex flex-col pt-36 min-h-screen bg-clr4 text-2xl text-left px-20 font-semibold">
+            <div className="bg-clr2 h-0.5 w-full rounded-md mb-10" />
+            <div className="flex justify-between">
+              <h1 className="w-2/5 text-5xl">
+                Que tal planejar o futuro do seu negócio imobiliário hoje?
+              </h1>
+              <p className="w-2/5 font-normal text-xl">
+                A Torodan apresenta as melhores soluções para a inclusão do seu
+                negócio imobiliário no mercado digital. Através de engenharias
+                de marketing modernas e uma ampla cobertura em diversas
+                plataformas, garantimos uma presença online elegante e voltada
+                para resultados reais. Traga suas vendas para a web de maneira
+                inteligente e fácil.
+              </p>
             </div>
-          </div>
-          <div className="flex relative w-2/5 bg-slate-800">
-            <Image src={Hero} alt="pic1" fill className="object-contain" />
-            <h2 className="absolute text-8xl bottom-36 font-semibold -translate-x-20">
-              Novas Ideias
-            </h2>
+            <div className="bg-clr2 h-0.5 w-full rounded-md mb-2 mt-10" />
           </div>
         </div>
+
         <ImageModal />
       </main>
     </>
