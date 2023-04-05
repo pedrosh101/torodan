@@ -16,6 +16,17 @@ module.exports = {
         clr3: "#F7C04A",
         clr4: "#F8F5E4",
       },
+      fontFamily: {
+        avenirbook: ["AVENIRBOOK"],
+        avenirheavy: ["AVENIRHEAVY"],
+        acc: ["ACC"],
+      },
+      lineHeight: {
+        '12': '4.5rem',
+      },
+      fontSize: {
+        '5xl': '3.3rem',
+      },
     },
   },
   plugins: [],

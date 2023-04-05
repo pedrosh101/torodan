@@ -11,20 +11,24 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="flex flex-col text-clr2">
+      <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
         <div className="flex text-clr2">
-          <div className="flex flex-col pt-36 min-h-screen bg-clr4 text-2xl text-left px-20 font-semibold">
+          <div className="flex flex-col pt-36 min-h-screen bg-clr4 text-2xl text-left px-4 lg:px-20 font-semibold">
             <div className="bg-clr2 h-0.5 w-full rounded-md mb-10" />
-            <div className="flex justify-between">
-              <h1 className="w-2/5 text-5xl">
-                Que tal planejar o futuro do seu negócio imobiliário hoje?
+            <div className="lg:flex justify-between">
+              <h1 className="lg:w-2/5 text-3xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
+                Que tal{" "}
+                <span className="font-acc italic font-thin">
+                  planejar o futuro
+                </span>{" "}
+                do seu negócio imobiliário hoje?
               </h1>
-              <p className="w-2/5 font-normal text-xl">
+              <p className="lg:w-2/6 text-lg font-avenirbook">
                 A Torodan apresenta as melhores soluções para a inclusão do seu
                 negócio imobiliário no mercado digital. Através de engenharias
                 de marketing modernas e uma ampla cobertura em diversas
-                plataformas, garantimos uma presença online elegante e voltada
+                plataformas, garantimos uma presença online segura e voltada
                 para resultados reais. Traga suas vendas para a web de maneira
                 inteligente e fácil.
               </p>

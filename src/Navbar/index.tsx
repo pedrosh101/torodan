@@ -12,8 +12,8 @@ const Navbar = () => {
 
   return (
     <nav className="bg-clr4 absolute z-50 w-screen">
-      <div className="mx-auto px-14 sm:px-6 lg:px-20">
-        <div className="flex items-center justify-between h-16">
+      <div className="mx-auto px-4 sm:px-6 lg:px-20">
+        <div className="flex items-center justify-between h-16 font-avenirheavy">
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
               <Image src={Torodan} alt="logo" width={150} height={50}></Image>
@@ -28,12 +28,12 @@ const Navbar = () => {
               </Link>
               <Link href="/about" legacyBehavior>
                 <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  About
+                  Sobre
                 </a>
               </Link>
               <Link href="/contact" legacyBehavior>
                 <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
-                  Contact
+                  Fale Conosco
                 </a>
               </Link>
             </div>
@@ -96,7 +96,7 @@ const Navbar = () => {
               className="text-clr2 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleNavbar}
             >
-              About
+              Sobre
             </a>
           </Link>
           <Link href="/contact" legacyBehavior>
@@ -104,7 +104,7 @@ const Navbar = () => {
               className="text-clr2 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleNavbar}
             >
-              Contact
+              Fale Conosco
             </a>
           </Link>
         </div>

@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+  font-family: "AVENIRBOOK";
+  src: url("../public/fonts/AvenirLTStd-Book.otf");
+}
+@font-face {
+  font-family: "AVENIRHEAVY";
+  src: url("../public/fonts/AvenirLTStd-Heavy.otf");
+}
+@font-face {
+  font-family: "ACC";
+  src: url("../public/fonts/Quetry Serif Demo.otf");
+}
