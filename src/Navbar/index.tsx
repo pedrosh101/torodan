@@ -11,28 +11,28 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-clr4 absolute z-50 w-screen">
-      <div className="mx-auto px-4 sm:px-6 lg:px-20">
+    <nav className="bg-clr4 absolute z-50 w-full">
+      <div className="mx-auto py-6 px-4 sm:px-6 lg:px-28">
         <div className="flex items-center justify-between h-16 font-avenirheavy">
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
-              <Image src={Torodan} alt="logo" width={150} height={50}></Image>
+              <Image src={Torodan} alt="logo" width={180} height={50}></Image>
             </Link>
           </div>
           <div className="hidden md:block">
             <div className="ml-10 flex items-baseline space-x-4">
               <Link href="/" legacyBehavior>
-                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md font-medium">
                   Home
                 </a>
               </Link>
               <Link href="/about" legacyBehavior>
-                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md font-medium">
                   Sobre
                 </a>
               </Link>
               <Link href="/contact" legacyBehavior>
-                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md text-sm font-medium">
+                <a className="text-clr2 hover:bg-clr1 hover:text-white px-3 py-2 rounded-md font-medium">
                   Fale Conosco
                 </a>
               </Link>
@@ -42,12 +42,12 @@ const Navbar = () => {
             <button
               onClick={toggleNavbar}
               type="button"
-              className="bg-gray-800 inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-clr1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-gray-800 focus:ring-white"
+              className="inline-flex items-center justify-center p-2 rounded-md text-clr2 hover:text-white hover:bg-clr1 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-clr1 focus:ring-white"
               aria-expanded="false"
             >
               <span className="sr-only">Open main menu</span>
               <svg
-                className={`block h-6 w-6 ${isOpen ? "hidden" : "block"}`}
+                className={`block h-8 w-8 ${isOpen ? "hidden" : "block"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
@@ -62,7 +62,7 @@ const Navbar = () => {
                 />
               </svg>
               <svg
-                className={`hidden h-6 w-6 ${isOpen ? "block" : "hidden"}`}
+                className={`hidden h-8 w-8 ${isOpen ? "block" : "hidden"}`}
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"

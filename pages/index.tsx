@@ -1,6 +1,8 @@
 import Navbar from "@/src/Navbar";
 import Head from "next/head";
 import ImageModal from "./imagemodal";
+import Image from "next/image";
+import Hero from "../public/img/hero.png";
 
 export default function Home() {
   return (
@@ -13,18 +15,20 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="flex text-clr2">
-          <div className="flex flex-col pt-36 min-h-screen bg-clr4 text-2xl text-left px-4 lg:px-20 font-semibold">
-            <div className="bg-clr2 h-0.5 w-full rounded-md mb-10" />
+        <div className="flex text-clr2 min-h-screen bg-clr4 pt-36 px-4 lg:px-28">
+          <div className="flex flex-col text-2xl text-left font-semibold w-3/5 align-middle content-center justify-center pr-24">
             <div className="lg:flex justify-between">
-              <h1 className="lg:w-2/5 text-3xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
+              <h1 className="text-3xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
                 Que tal{" "}
                 <span className="font-acc italic font-thin">
                   planejar o futuro
                 </span>{" "}
                 do seu negócio imobiliário hoje?
               </h1>
-              <p className="lg:w-2/6 text-lg font-avenirbook">
+            </div>
+            <div className="bg-clr2 h-0.5 rounded-md mb-2 mt-10" />
+            <div className="flex">
+            <p className="text-xl font-avenirbook mt-6 leading-10">
                 A Torodan apresenta as melhores soluções para a inclusão do seu
                 negócio imobiliário no mercado digital. Através de engenharias
                 de marketing modernas e uma ampla cobertura em diversas
@@ -33,7 +37,9 @@ export default function Home() {
                 inteligente e fácil.
               </p>
             </div>
-            <div className="bg-clr2 h-0.5 w-full rounded-md mb-2 mt-10" />
+          </div>
+          <div className="relative w-2/5">
+            <Image src={Hero} alt="hero" className="object-cover"></Image>
           </div>
         </div>
 
