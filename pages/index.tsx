@@ -3,7 +3,8 @@ import Head from "next/head";
 import ImageModal from "./imagemodal";
 import Image from "next/image";
 import Hero from "../public/img/hero.png";
-import Social from "../public/img/socialmedia.png";
+import Social from "../public/img/socialmedia.jpg";
+import Trafego from "../public/img/trafego.png";
 
 export default function Home() {
   return (
@@ -16,7 +17,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-36 pt-32 px-4 lg:px-28 pb-4">
+        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-36 pt-32 px-4 lg:px-28 pb-28">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
@@ -44,14 +45,14 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:pt-36 pt-32 px-4 lg:px-28 pb-4">
+      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:pt-28 pt-32 px-4 lg:px-28 pb-4">
         <h1 className="text-4xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
           Nossa meta: trazer sua empresa para o{" "}
           <span className="font-acc italic font-thin">digital</span> levando seu
           imóvel aos olhos certos.
         </h1>
-        <div className="relative w-full md:w-1/2 pt-10">
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr1">
+        <div className="flex relative w-full space-x-6 pt-10">
+          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr2">
             <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
               <Image
                 src={Social}
@@ -59,8 +60,26 @@ export default function Home() {
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-7xl mb-2 px-32">
+              <h2 className="font-bold text-7xl mb-4 px-32">
                 Gerenciamento de Mídia Social
+              </h2>
+              <h3 className="font-semibold text-2xl px-32">
+                Postagens, Reels, Carrossel, Stories... <br/>
+                
+                Criar um conteúdo de qualidade e que ajude a transmitir os valores da empresa é fundamental no marketing digital imobiliário, pois além de engajar potenciais clientes também permite construir uma presença forte e positiva online.
+              </h3>
+            </div>
+          </div>
+          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
+            <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
+              <Image
+                src={Trafego}
+                alt="Card background"
+                fill
+                className="object-cover -z-30"
+              />
+              <h2 className="font-bold text-7xl mb-4 px-32">
+                Tráfego Pago
               </h2>
               <h3 className="font-semibold text-2xl px-32">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
