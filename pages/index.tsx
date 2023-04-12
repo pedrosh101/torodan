@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-36 pt-32 px-4 lg:px-28 pb-28">
+        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-22 pt-32 px-4 lg:px-28 pb-28">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
@@ -39,6 +39,9 @@ export default function Home() {
                 inteligente e fácil.
               </p>
             </div>
+            <button className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 w-4/12 rounded">
+              Fale Conosco
+            </button>
           </div>
           <div className="relative lg:w-2/5 lg:pr-0 pr-6 lg:py-0 py-6">
             <Image src={Hero} alt="hero" className="object-cover"></Image>
@@ -52,7 +55,7 @@ export default function Home() {
           imóvel aos olhos certos.
         </h1>
         <div className="flex relative w-full space-x-6 pt-10">
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr2">
+          <div className="overflow-hidden shadow-lg w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr2">
             <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
               <Image
                 src={Social}
@@ -64,13 +67,20 @@ export default function Home() {
                 Gerenciamento de Mídia Social
               </h2>
               <h3 className="font-semibold text-2xl px-32">
-                Postagens, Reels, Carrossel, Stories... <br/>
-                
-                Criar um conteúdo de qualidade e que ajude a transmitir os valores da empresa é fundamental no marketing digital imobiliário, pois além de engajar potenciais clientes também permite construir uma presença forte e positiva online.
+                Criar um conteúdo de qualidade e que ajude a transmitir os
+                valores da empresa é fundamental no marketing digital
+                imobiliário. Além de engajar potenciais clientes também permite
+                construir uma presença forte e positiva online.
+                <br />
+                Chegou a hora do seu Facebook e Instagram refletirem a qualidade
+                do seu trabalho.
+                <br />
+                Mas não é só isso, locadores e compradores também precisam achar
+                seu imóvel em plataformas como ZAP Imóveis e OLX.
               </h3>
             </div>
           </div>
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
+          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
             <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
               <Image
                 src={Trafego}
@@ -78,14 +88,14 @@ export default function Home() {
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-7xl mb-4 px-32">
-                Tráfego Pago
-              </h2>
+              <h2 className="font-bold text-7xl mb-4 px-32">Tráfego Pago</h2>
               <h3 className="font-semibold text-2xl px-32">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Deserunt molestiae placeat facilis fugit explicabo cumque facere
-                distinctio, cupiditate, assumenda amet dicta commodi est, ipsa
-                unde. Quae dolore cumque itaque ipsam.
+                Investir em anúncios pagos é a melhor maneira de gerar leads
+                interessados e qualificados para seu imóvel. Quando bem aplicada
+                a estratégia permite otimizar o investimento, segmentando o
+                público-alvo para determinado empreendimento. Nós da Torodan
+                valorizamos seu anúncio e acompanhamos as métricas diariamente,
+                sempre aprimorando
               </h3>
             </div>
           </div>

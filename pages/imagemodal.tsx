@@ -17,7 +17,7 @@ const ImageModal = () => {
           onClick={toggleModal}
         >
           <div className="bg-white p-2 rounded-md max-w-3xl">
-            <Image src={Baby} alt="Image" width={1200} height={800} />
+            <Image src={Baby} alt="Image" width={1800} height={1000} />
           </div>
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -35,7 +35,7 @@ const ImageModal = () => {
       )}
       {!showModal && (
         <div className="relative cursor-pointer" onClick={toggleModal}>
-          <Image src={Baby} alt="Image" width={400} height={400} />
+          <Image src={Baby} alt="Image" width={300} height={300} />
           <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center"></div>
         </div>
       )}
