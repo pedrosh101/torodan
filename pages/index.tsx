@@ -1,11 +1,10 @@
 import Navbar from "@/src/Navbar";
 import Head from "next/head";
-import ImageModal from "./imagemodal";
 import Image from "next/image";
 import Hero from "../public/img/hero.png";
 import Social from "../public/img/socialmedia.jpg";
 import Trafego from "../public/img/trafego.png";
-
+import ImageModal from "@/src/ImageModal";
 
 export default function Home() {
   return (
@@ -18,7 +17,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-22 pt-32 px-4 lg:px-28 pb-12">
+        <div className="lg:flex text-clr2 min-h-screen bg-clr4 pt-32 px-4 lg:px-28 pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
@@ -49,7 +48,8 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:pt-28 pt-12 px-4 lg:px-28 pb-4">
+
+      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:py-28 pt-12 px-4 lg:px-28 pb-4">
         <h1 className="text-4xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
           Nossa meta: trazer sua empresa para o{" "}
           <span className="font-acc italic font-thin">digital</span> levando seu
@@ -64,18 +64,18 @@ export default function Home() {
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">Gerenciamento de Mídia Social</h2>
+              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">
+                Gerenciamento de Mídia Social
+              </h2>
               <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-28">
                 Criar um conteúdo de qualidade e que ajude a transmitir os
                 valores da empresa é fundamental no marketing digital
                 imobiliário. Além de engajar potenciais clientes também permite
                 construir uma presença forte e positiva online.
                 <br />
-                Chegou a hora do seu Facebook e Instagram refletirem a qualidade
+                Permita que seu Facebook e Instagram refletirem a qualidade
                 do seu trabalho.
-                <br />
-                Mas não é só isso, locadores e compradores também precisam achar
-                seu imóvel em plataformas como ZAP Imóveis e OLX.
+
               </h3>
             </div>
           </div>
@@ -87,7 +87,9 @@ export default function Home() {
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">Campanhas de Tráfego Pago</h2>
+              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">
+                Campanhas de Tráfego Pago
+              </h2>
               <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-28">
                 Investir em anúncios pagos é a melhor maneira de gerar leads
                 interessados e qualificados para seu imóvel. Quando bem aplicada
