@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 import Torodan from '../../public/img/torodanlogo.png'
 
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 

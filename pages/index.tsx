@@ -6,6 +6,7 @@ import Hero from "../public/img/hero.png";
 import Social from "../public/img/socialmedia.jpg";
 import Trafego from "../public/img/trafego.png";
 
+
 export default function Home() {
   return (
     <>
@@ -17,7 +18,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-22 pt-32 px-4 lg:px-28 pb-28">
+        <div className="lg:flex text-clr2 min-h-screen bg-clr4 lg:pt-22 pt-32 px-4 lg:px-28 pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
@@ -39,7 +40,7 @@ export default function Home() {
                 inteligente e fácil.
               </p>
             </div>
-            <button className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 w-4/12 rounded">
+            <button className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-12 w-1/2 text-xl lg:text-2xl lg:w-4/12 rounded">
               Fale Conosco
             </button>
           </div>
@@ -48,25 +49,23 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:pt-28 pt-32 px-4 lg:px-28 pb-4">
+      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:pt-28 pt-12 px-4 lg:px-28 pb-4">
         <h1 className="text-4xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
           Nossa meta: trazer sua empresa para o{" "}
           <span className="font-acc italic font-thin">digital</span> levando seu
           imóvel aos olhos certos.
         </h1>
-        <div className="flex relative w-full space-x-6 pt-10">
-          <div className="overflow-hidden shadow-lg w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr2">
-            <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
+        <div className="lg:flex relative w-full lg:space-x-6 space-y-6 lg:space-y-0 lg:pt-16 pt-4">
+          <div className="overflow-hidden shadow-lg lg:w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
+            <div className="p-4 flex flex-col w-full justify-center px-4">
               <Image
                 src={Social}
                 alt="Card background"
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-7xl mb-4 px-32">
-                Gerenciamento de Mídia Social
-              </h2>
-              <h3 className="font-semibold text-2xl px-32">
+              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">Gerenciamento de Mídia Social</h2>
+              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-28">
                 Criar um conteúdo de qualidade e que ajude a transmitir os
                 valores da empresa é fundamental no marketing digital
                 imobiliário. Além de engajar potenciais clientes também permite
@@ -80,16 +79,16 @@ export default function Home() {
               </h3>
             </div>
           </div>
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
-            <div className="h-screen p-4 flex flex-col w-full justify-center px-4 py-2">
+          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl lg:w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
+            <div className="p-4 flex flex-col w-full justify-center px-4">
               <Image
                 src={Trafego}
                 alt="Card background"
                 fill
                 className="object-cover -z-30"
               />
-              <h2 className="font-bold text-7xl mb-4 px-32">Tráfego Pago</h2>
-              <h3 className="font-semibold text-2xl px-32">
+              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-28 pt-10">Campanhas de Tráfego Pago</h2>
+              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-28">
                 Investir em anúncios pagos é a melhor maneira de gerar leads
                 interessados e qualificados para seu imóvel. Quando bem aplicada
                 a estratégia permite otimizar o investimento, segmentando o
