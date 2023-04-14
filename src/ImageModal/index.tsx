@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import Focus from "../../public/img/Focus Imóveis.png";
-import Litoral from "../../public/img/Litoral Sul Imóveis.png";
+import Focus from "../../public/img/FocusImóveis.png";
+import Litoral from "../../public/img/LitoralSulImóveis.png";
 import Link from "next/link";
 
 const ImageModal = () => {
@@ -46,7 +46,7 @@ const ImageModal = () => {
           <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
             <Image
               src={Focus}
-              alt="Image"
+              alt="focus"
               width={300}
               height={300}
               onClick={toggleModal1}
@@ -69,7 +69,7 @@ const ImageModal = () => {
         <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
             <Image
               src={Litoral}
-              alt="Image"
+              alt="litoral"
               width={300}
               height={300}
               onClick={toggleModal2}

@@ -3,7 +3,7 @@ import Head from "next/head";
 import Image from "next/image";
 import Hero from "../public/img/hero.png";
 import Social from "../public/img/socialmedia.jpg";
-import Trafego from "../public/img/trafego.png";
+import Trafego from "../public/img/trafego.jpg";
 import ImageModal from "@/src/ImageModal";
 
 export default function Home() {
