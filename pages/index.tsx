@@ -39,9 +39,9 @@ export default function Home() {
                 inteligente e fácil.
               </p>
             </div>
-            <button className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-8 w-1/2 text-xl lg:text-2xl lg:w-4/12 rounded">
+            <a href="https://wa.me/5512981622637" target="blank" className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-8 w-1/2 text-xl lg:text-2xl lg:w-4/12 rounded text-center">
               Fale Conosco
-            </button>
+            </a>
           </div>
           <div className="relative lg:w-2/5 lg:pr-0 pr-6 lg:py-0 py-6">
             <Image src={Hero} alt="hero" className="object-cover"></Image>
