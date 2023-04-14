@@ -1,76 +1,93 @@
 import { useState } from "react";
 import Image from "next/image";
-import Baby from "../../public/img/babymary.jpg";
+import Focus from "../../public/img/Focus Imóveis.png";
+import Litoral from "../../public/img/Litoral Sul Imóveis.png";
+import Link from "next/link";
 
 const ImageModal = () => {
-  const [showModal, setShowModal] = useState(false);
+  const [showModal1, setShowModal1] = useState(false);
+  const [showModal2, setShowModal2] = useState(false);
 
-  const toggleModal = () => {
-    setShowModal(!showModal);
+  const toggleModal1 = () => {
+    setShowModal1(!showModal1);
+  };
+  const toggleModal2 = () => {
+    setShowModal2(!showModal2);
   };
 
   return (
-    <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-24">
-      <h1 className="text-4xl lg:text-6xl lg:leading-12 pb-8">
+    <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
+      <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-12 pb-6">
         A <span className="font-acc italic font-thin">identidade visual</span>{" "}
         das suas redes importa e muito.
       </h1>
-      {showModal && (
+      {showModal1 && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
-          onClick={toggleModal}
+          onClick={toggleModal1}
         >
           <div className="bg-white p-2 rounded-md max-w-3xl">
-            <Image src={Baby} alt="Image" width={1800} height={1000} />
+            <Image src={Focus} alt="Image" width={1800} height={1000} />
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="h-12 w-12 text-gray-500"
-            viewBox="0 0 20 20"
-            fill="currentColor"
-          >
-            <path
-              fillRule="evenodd"
-              d="M5.707 5.293a1 1 0 011.414 0L10 8.586l2.879-2.88a1 1 0 111.414 1.414L11.414 10l2.88 2.879a1 1 0 11-1.414 1.414L10 11.414l-2.879 2.88a1 1 0 01-1.414-1.414L8.586 10 5.707 7.121a1 1 0 010-1.414z"
-              clipRule="evenodd"
-            />
-          </svg>
         </div>
       )}
-      <div className="flex space-x-12">
-        <div className="flex flex-col space-y-2">
-          <div className="cursor-pointer h-fit w-fit">
+      {showModal2 && (
+        <div
+          className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
+          onClick={toggleModal2}
+        >
+          <div className="bg-white p-2 rounded-md max-w-3xl">
+            <Image src={Litoral} alt="Image" width={1800} height={1000} />
+          </div>
+        </div>
+      )}
+      <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-8 lg:space-y-0 text-lg leading-5 w-full justify-evenly font-bold">
+        <div className="flex flex-col space-y-2 items-center">
+          <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
             <Image
-              src={Baby}
+              src={Focus}
               alt="Image"
               width={300}
               height={300}
-              onClick={toggleModal}
+              onClick={toggleModal1}
+              className="rounded-xl"
             />
           </div>
           <h1>
             Clique{" "}
-            <span className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3">
+            <Link
+              target="_blank"
+              href={"https://www.behance.net/gallery/167475355/Focus-Imoveis"}
+              className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3"
+            >
               aqui
-            </span>{" "}
+            </Link>{" "}
             para ver o projeto completo.
           </h1>
         </div>
-        <div className="flex flex-col space-y-2">
-          <div className="cursor-pointer h-fit w-fit">
+        <div className="flex flex-col space-y-2 items-center">
+        <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
             <Image
-              src={Baby}
+              src={Litoral}
               alt="Image"
               width={300}
               height={300}
-              onClick={toggleModal}
+              onClick={toggleModal2}
+              className="rounded-xl"
             />
           </div>
+
           <h1>
             Clique{" "}
-            <span className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3">
+            <Link
+              target="_blank"
+              href={
+                "https://www.behance.net/gallery/167893469/Litoral-Sul-Imoveis"
+              }
+              className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3"
+            >
               aqui
-            </span>{" "}
+            </Link>{" "}
             para ver o projeto completo.
           </h1>
         </div>
