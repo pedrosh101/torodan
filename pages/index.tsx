@@ -69,11 +69,11 @@ export default function Home() {
               </h2>
               <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
                 Criar um conteúdo de qualidade e que ajude a transmitir os
-                valores da empresa é fundamental no marketing digital
+                valores da sua empresa é fundamental no marketing digital
                 imobiliário. Além de engajar potenciais clientes também permite
                 construir uma presença forte e positiva online.
                 <br />
-                Permita que seu Facebook e Instagram refletirem a qualidade do
+                Permita que seu Facebook e Instagram reflitam a qualidade do
                 seu trabalho.
               </h3>
             </div>
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
       <ImageModal />
-      <div className="flex bg-clr1 w-full justify-center font-avenirheavy text-xl">
+      <div className="flex bg-clr2 w-full justify-center font-avenirheavy text-xl">
         <div className="w-fit text-center pt-8 px-12 text-clr4 rounded-xl space-y-1 lg:w-3/12">
           <h2 className="text-3xl mb-4 font-avenirheavy">Fale Conosco</h2>
           <a href="https://wa.me/5512981622637" target="blank" className="flex justify-center space-x-2 items-center hover:text-clr3 cursor-pointer">

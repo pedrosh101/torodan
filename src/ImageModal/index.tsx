@@ -53,17 +53,17 @@ const ImageModal = () => {
               className="rounded-xl"
             />
           </div>
-          <h1>
-            Clique{" "}
+
+
             <Link
               target="_blank"
               href={"https://www.behance.net/gallery/167475355/Focus-Imoveis"}
-              className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3"
+              className="font-avenirheavy cursor-pointer font-thin text-clr1 hover:text-clr3"
             >
-              aqui
+              Ver o projeto completo
             </Link>{" "}
-            para ver o projeto completo.
-          </h1>
+
+
         </div>
         <div className="flex flex-col space-y-2 items-center">
         <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
@@ -77,19 +77,18 @@ const ImageModal = () => {
             />
           </div>
 
-          <h1>
-            Clique{" "}
+
             <Link
               target="_blank"
               href={
                 "https://www.behance.net/gallery/167893469/Litoral-Sul-Imoveis"
               }
-              className="font-acc italic cursor-pointer font-thin text-clr1 hover:text-clr3"
+              className="font-avenirheavy cursor-pointer font-thin text-clr1 hover:text-clr3"
             >
-              aqui
+              Ver o projeto completo.
             </Link>{" "}
-            para ver o projeto completo.
-          </h1>
+
+
         </div>
       </div>
     </div>
