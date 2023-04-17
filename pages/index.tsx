@@ -17,7 +17,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex text-clr2 min-h-screen bg-clr4 pt-32 px-4 lg:px-28 pb-12">
+        <div className="lg:flex min-h-screen bg-clr4 pt-32 px-4 lg:px-28 pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">

@@ -58,7 +58,7 @@ const ImageModal = () => {
             <Link
               target="_blank"
               href={"https://www.behance.net/gallery/167475355/Focus-Imoveis"}
-              className="font-avenirheavy cursor-pointer font-thin text-clr1 hover:text-clr3"
+              className="font-avenirheavy cursor-pointer font-thin text-clr2 hover:text-clr3"
             >
               Ver o projeto completo
             </Link>{" "}
@@ -83,7 +83,7 @@ const ImageModal = () => {
               href={
                 "https://www.behance.net/gallery/167893469/Litoral-Sul-Imoveis"
               }
-              className="font-avenirheavy cursor-pointer font-thin text-clr1 hover:text-clr3"
+              className="font-avenirheavy cursor-pointer font-thin text-clr2 hover:text-clr3"
             >
               Ver o projeto completo.
             </Link>{" "}
