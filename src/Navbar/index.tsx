@@ -12,11 +12,11 @@ const Navbar = () => {
 
   return (
     <nav className="bg-clr4 absolute z-50 w-full">
-      <div className="mx-auto py-3 lg:py-6 px-4 sm:px-6 lg:px-28">
+      <div className="mx-auto py-3 lg:py-5 px-4 sm:px-6 lg:px-28">
         <div className="flex items-center justify-between h-16 font-avenirheavy">
           <div className="flex items-center">
             <Link href="/" legacyBehavior>
-              <Image src={Torodan} alt="logo" width={180} height={50}></Image>
+              <Image src={Torodan} alt="logo" width={180} height={50} className="cursor-pointer"></Image>
             </Link>
           </div>
           <div className="hidden md:block">

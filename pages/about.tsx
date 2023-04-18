@@ -11,11 +11,11 @@ export default function Home() {
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
-                Hora de {" "}
+              Mídia e tráfego imobiliário
                 <span className="font-acc italic font-thin">
-                  alavancar na web
+                {" "}em um só lugar.
                 </span>{" "}
-                suas vendas e aluguéis.
+                
               </h1>
             </div>
             <div className="bg-clr4 h-0.5 rounded-md mb-2 lg:mt-10" />
@@ -25,7 +25,7 @@ export default function Home() {
                 de marketing digital, como anúncios em mídias sociais, campanhas
                 de e-mail e otimização de mecanismos de busca (SEO), somadas as
                 melhores campanhas em plataformas de tráfego pago. <br />
-                Com nossos serviços de marketing de alta qualidade, sua
+                Com nossos serviços de alta qualidade, sua
                 corretora terá a vantagem competitiva necessária para aumentar
                 suas vendas e aluguéis de maneira eficiente e consistente.
               </p>

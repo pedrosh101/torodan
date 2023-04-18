@@ -26,7 +26,7 @@ const ImageModal = () => {
           className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
           onClick={toggleModal1}
         >
-          <div className="bg-white p-2 rounded-md max-w-3xl">
+          <div className="bg-clr4 p-2 rounded-md max-w-3xl">
             <Image src={Focus} alt="Image" width={1800} height={1000} />
           </div>
         </div>
@@ -36,7 +36,7 @@ const ImageModal = () => {
           className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
           onClick={toggleModal2}
         >
-          <div className="bg-white p-2 rounded-md max-w-3xl">
+          <div className="bg-clr4 p-2 rounded-md max-w-3xl">
             <Image src={Litoral} alt="Image" width={1800} height={1000} />
           </div>
         </div>
