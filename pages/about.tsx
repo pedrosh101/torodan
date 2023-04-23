@@ -13,7 +13,7 @@ export default function Home() {
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
               Mídia e tráfego imobiliário
                 <span className="font-acc italic font-thin">
-                {" "}em um só lugar.
+                {" "}no mesmo lugar.
                 </span>{" "}
                 
               </h1>

@@ -1,5 +1,6 @@
 // import { useState } from "react";
 import Image from "next/image";
+import Stories from "../../public/img/stories.png";
 // import Focus from "../../public/img/FocusImóveis.png";
 // import Litoral from "../../public/img/LitoralSulImóveis.png";
 // import Link from "next/link";
@@ -21,8 +22,26 @@ const ImageModal = () => {
         A <span className="font-acc italic font-thin">identidade visual</span>{" "}
         das suas redes importa e muito.
       </h1>
-      <div>
-        <img src="/img/herocasa.gif" alt="My Gif" className="lg:h-[44rem]" />
+      <div className="lg:flex justify-evenly">
+        <div className="">
+          <img
+            src="/img/herocasa.gif"
+            alt="homegif"
+            className="lg:h-[44rem] lg:pr-10 pb-4 lg:pb-0"
+          />
+        </div>
+        <div className="flex flex-col lg:w-1/2 items-center">
+          <Image src={Stories} alt="stories" className="object-cover" />
+          <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6 align-middle content-center justify-center">
+            <a
+              href="https://www.behance.net/pedrosh101"
+              target="blank"
+              className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-8 text-xl lg:text-2xl rounded text-center"
+            >
+              Nossos Projetos
+            </a>
+          </div>
+        </div>
       </div>
       {/* {showModal1 && (
         <div
