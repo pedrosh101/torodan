@@ -1,19 +1,19 @@
-import { useState } from "react";
+// import { useState } from "react";
 import Image from "next/image";
-import Focus from "../../public/img/FocusImóveis.png";
-import Litoral from "../../public/img/LitoralSulImóveis.png";
-import Link from "next/link";
+// import Focus from "../../public/img/FocusImóveis.png";
+// import Litoral from "../../public/img/LitoralSulImóveis.png";
+// import Link from "next/link";
 
 const ImageModal = () => {
-  const [showModal1, setShowModal1] = useState(false);
-  const [showModal2, setShowModal2] = useState(false);
+  // const [showModal1, setShowModal1] = useState(false);
+  // const [showModal2, setShowModal2] = useState(false);
 
-  const toggleModal1 = () => {
-    setShowModal1(!showModal1);
-  };
-  const toggleModal2 = () => {
-    setShowModal2(!showModal2);
-  };
+  // const toggleModal1 = () => {
+  //   setShowModal1(!showModal1);
+  // };
+  // const toggleModal2 = () => {
+  //   setShowModal2(!showModal2);
+  // };
 
   return (
     <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
@@ -21,7 +21,10 @@ const ImageModal = () => {
         A <span className="font-acc italic font-thin">identidade visual</span>{" "}
         das suas redes importa e muito.
       </h1>
-      {showModal1 && (
+      <div>
+        <img src="/img/herocasa.gif" alt="My Gif" className="lg:h-[44rem]" />
+      </div>
+      {/* {showModal1 && (
         <div
           className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
           onClick={toggleModal1}
@@ -90,7 +93,7 @@ const ImageModal = () => {
 
 
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -27,6 +27,9 @@ module.exports = {
       fontSize: {
         '5xl': '3.3rem',
       },
+      height: {
+        '150': '44rem',
+      }
     },
   },
   plugins: [],
