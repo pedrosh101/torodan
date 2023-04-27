@@ -1,21 +1,7 @@
-// import { useState } from "react";
 import Image from "next/image";
 import Stories from "../../public/img/stories.png";
-// import Focus from "../../public/img/FocusImóveis.png";
-// import Litoral from "../../public/img/LitoralSulImóveis.png";
-// import Link from "next/link";
 
 const ImageModal = () => {
-  // const [showModal1, setShowModal1] = useState(false);
-  // const [showModal2, setShowModal2] = useState(false);
-
-  // const toggleModal1 = () => {
-  //   setShowModal1(!showModal1);
-  // };
-  // const toggleModal2 = () => {
-  //   setShowModal2(!showModal2);
-  // };
-
   return (
     <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
       <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-12 pb-6">
@@ -30,89 +16,19 @@ const ImageModal = () => {
             className="lg:h-[44rem] lg:pr-10 pb-4 lg:pb-0"
           />
         </div>
-        <div className="flex flex-col lg:w-1/2 items-center">
+        <div className="flex flex-col lg:w-1/2 lg:items-center">
           <Image src={Stories} alt="stories" className="object-cover" />
-          <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6 align-middle content-center justify-center">
+          <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
             <a
-              href="https://www.behance.net/pedrosh101"
+              href="https://www.behance.net/torodan"
               target="blank"
-              className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-8 text-xl lg:text-2xl rounded text-center"
+              className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-20 text-xl lg:text-2xl rounded text-center"
             >
               Nossos Projetos
             </a>
           </div>
         </div>
       </div>
-      {/* {showModal1 && (
-        <div
-          className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
-          onClick={toggleModal1}
-        >
-          <div className="bg-clr4 p-2 rounded-md max-w-3xl">
-            <Image src={Focus} alt="Image" width={1800} height={1000} />
-          </div>
-        </div>
-      )}
-      {showModal2 && (
-        <div
-          className="fixed top-0 left-0 w-full h-full bg-gray-800 bg-opacity-50 flex justify-center items-center"
-          onClick={toggleModal2}
-        >
-          <div className="bg-clr4 p-2 rounded-md max-w-3xl">
-            <Image src={Litoral} alt="Image" width={1800} height={1000} />
-          </div>
-        </div>
-      )}
-      <div className="flex flex-col lg:flex-row lg:space-x-12 space-y-8 lg:space-y-0 text-lg leading-5 w-full justify-evenly font-bold">
-        <div className="flex flex-col space-y-2 items-center">
-          <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
-            <Image
-              src={Focus}
-              alt="focus"
-              width={300}
-              height={300}
-              onClick={toggleModal1}
-              className="rounded-xl"
-            />
-          </div>
-
-
-            <Link
-              target="_blank"
-              href={"https://www.behance.net/gallery/167475355/Focus-Imoveis"}
-              className="font-avenirheavy cursor-pointer font-thin text-clr2 hover:text-clr3"
-            >
-              Ver o projeto completo
-            </Link>{" "}
-
-
-        </div>
-        <div className="flex flex-col space-y-2 items-center">
-        <div className="cursor-pointer h-fit w-fit border-2 rounded-2xl border-clr2">
-            <Image
-              src={Litoral}
-              alt="litoral"
-              width={300}
-              height={300}
-              onClick={toggleModal2}
-              className="rounded-xl"
-            />
-          </div>
-
-
-            <Link
-              target="_blank"
-              href={
-                "https://www.behance.net/gallery/167893469/Litoral-Sul-Imoveis"
-              }
-              className="font-avenirheavy cursor-pointer font-thin text-clr2 hover:text-clr3"
-            >
-              Ver o projeto completo.
-            </Link>{" "}
-
-
-        </div>
-      </div> */}
     </div>
   );
 };
