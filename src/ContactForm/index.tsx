@@ -2,8 +2,9 @@ import { sendContactForm } from "@/lib/api";
 import { useState } from "react";
 
 const initValues = { name: "", email: "", message: "" };
+const error = ""
 
-const initState = { values: initValues };
+const initState = { values: initValues, error };
 
 function ContactForm() {
   const [state, setState] = useState(initState);
@@ -29,15 +30,15 @@ function ContactForm() {
     } catch (error) {
       setState((prev) => ({
         ...prev,
-        error: error.message,
+
       }));
     }
   };
 
   return (
-    <form>
-      {error && <h1>erro pirata</h1>}
-      <label htmlFor="name">Name</label>
+    <form className="flex flex-col font-avenirbook text-clr4">
+
+      <label htmlFor="name">Nome</label>
       <input
         type="text"
         id="name"
@@ -45,24 +46,27 @@ function ContactForm() {
         value={values.name}
         required
         onChange={handleChange}
+        className="text-black"
       />
 
-      <label htmlFor="email">Email</label>
+      <label htmlFor="email">E-mail</label>
       <input
         type="email"
         id="email"
         name="email"
         value={values.email}
         onChange={handleChange}
+        className="text-black"
       />
 
-      <label htmlFor="message">Message</label>
+      <label htmlFor="message">Mensagem</label>
       <textarea
         id="message"
-        rows={4}
+        rows={6}
         name="message"
         value={values.message}
         onChange={handleChange}
+         className="text-black"
       ></textarea>
 
       <button
