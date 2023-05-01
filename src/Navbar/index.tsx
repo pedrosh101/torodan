@@ -38,13 +38,11 @@ const Navbar = () => {
                 </a>
               </Link>
 
-              <a
-                href="https://wa.me/5512981622637"
-                target="blank"
-                className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium"
-              >
-                Fale Conosco
-              </a>
+              <Link href="/contact" legacyBehavior>
+                <a className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium">
+                  Fale Conosco
+                </a>
+              </Link>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -109,15 +107,14 @@ const Navbar = () => {
               Sobre
             </a>
           </Link>
-
-          <a
-            href="https://wa.me/5512981622637"
-            target="blank"
-            className="text-clr4 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
-            onClick={toggleNavbar}
-          >
-            Fale Conosco
-          </a>
+          <Link href="/contact" legacyBehavior>
+            <a
+              className="text-clr4 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+              onClick={toggleNavbar}
+            >
+              Fale Conosco
+            </a>
+          </Link>
         </div>
       </div>
     </nav>
