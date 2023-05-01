@@ -1,4 +1,4 @@
-export const sendContactForm = async (data) =>
+export const sendContactForm = async (data: string) =>
   fetch("/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
