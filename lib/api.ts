@@ -1,4 +1,6 @@
-export const sendContactForm = async (data) =>
+import { Data } from "../src/@types/main";
+
+export const sendContactForm = async (data: Data) =>
   fetch("/api/contact", {
     method: "POST",
     body: JSON.stringify(data),
