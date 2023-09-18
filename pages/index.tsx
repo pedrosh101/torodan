@@ -31,20 +31,18 @@ export default function Home() {
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
                 Que tal{" "}
                 <span className="font-acc italic font-thin">
-                  planejar o futuro
+                  alcançar seus clientes
                 </span>{" "}
-                do seu negócio imobiliário hoje?
+                de uma maneira moderna?
               </h1>
             </div>
             <div className="bg-clr2 h-0.5 rounded-md mb-2 lg:mt-10" />
             <div className="flex">
               <p className="text-xl font-avenirbook mt-6 leading-8 lg:leading-10">
                 A Torodan apresenta as melhores soluções para a inclusão do seu
-                negócio imobiliário no mercado digital. Através de engenharias
-                de marketing modernas e uma ampla cobertura em diversas
-                plataformas, garantimos uma presença online segura e voltada
-                para resultados reais. Traga suas vendas para a web de maneira
-                inteligente e fácil.
+                negócio no mercado digital. Através de engenharias
+                de marketing modernas, garantimos uma presença online segura e voltada
+                para resultados reais. Permita ser encontrado na web de maneira inteligente e fácil.
               </p>
             </div>
             <a

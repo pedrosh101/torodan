@@ -1,4 +1,3 @@
-// Next.js API route support: https://nextjs.org/docs/api-routes/introduction
 import { mailOptions, transporter } from "@/config/nodemailer";
 import type { NextApiRequest, NextApiResponse } from "next";
 import { Data } from "../../src/@types/main";
@@ -10,7 +9,7 @@ const CONTACT_MESSAGE_FIELDS = {
   message: "Message",
 };
 
-const generateEmailContent = (data: Data) => {
+const generateEmailContent = (data) => {
   const stringData = Object.entries(data).reduce(
     (str, [key, val]) =>
       (str += `${CONTACT_MESSAGE_FIELDS[key]}: \n${val} \n \n`),

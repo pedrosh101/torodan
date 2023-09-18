@@ -1,4 +1,3 @@
-
 export type Parfum = {
   id: number;
   title: string;
@@ -28,5 +27,13 @@ export type CollectionProp = {
 };
 
 export type Data = {
+  name: string;
+  email: string;
   message: string;
+}[];
+
+export type IContact = {
+  name: "Name";
+  email: "Email";
+  message: "Message";
 }[];

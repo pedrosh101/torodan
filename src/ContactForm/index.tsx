@@ -1,8 +1,14 @@
 import { sendContactForm } from "@/lib/api";
 import { useState } from "react";
 
-const initValues = { name: "", email: "", message: "" };
-const error = ""
+type Nana = {
+  name: string;
+  email: string;
+  message: string;
+};
+
+const initValues: Nana = { name: "", email: "", message: "" };
+const error = "";
 
 const initState = { values: initValues, error };
 
@@ -30,14 +36,12 @@ function ContactForm() {
     } catch (error) {
       setState((prev) => ({
         ...prev,
-
       }));
     }
   };
 
   return (
     <form className="flex flex-col font-avenirbook text-clr4">
-
       <label htmlFor="name">Nome</label>
       <input
         type="text"
@@ -66,7 +70,7 @@ function ContactForm() {
         name="message"
         value={values.message}
         onChange={handleChange}
-         className="text-black"
+        className="text-black"
       ></textarea>
 
       <button
