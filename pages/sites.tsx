@@ -2,7 +2,9 @@ import Navbar from "@/src/Navbar";
 import Image from "next/image";
 import About from "../public/img/about.jpg";
 
-export default function Home() {
+import Footer from "@/src/Footer";
+
+export default function Social() {
   return (
     <>
       <main className="flex flex-col text-clr4 font-avenirbook">
@@ -11,11 +13,12 @@ export default function Home() {
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
-              Mídia e tráfego imobiliário
+                Sites profissionais para
                 <span className="font-acc italic font-thin">
-                {" "}no mesmo lugar.
+                  {" "}
+                  qualquer
                 </span>{" "}
-                
+                negócio{" "}
               </h1>
             </div>
             <div className="bg-clr4 h-0.5 rounded-md mb-2 lg:mt-10" />
@@ -25,9 +28,9 @@ export default function Home() {
                 de marketing digital, como anúncios em mídias sociais, campanhas
                 de e-mail e otimização de mecanismos de busca (SEO), somadas as
                 melhores campanhas em plataformas de tráfego pago. <br />
-                Com nossos serviços de alta qualidade, sua
-                corretora terá a vantagem competitiva necessária para aumentar
-                suas vendas e aluguéis de maneira eficiente e consistente.
+                Com nossos serviços de alta qualidade, seu negócio terá a
+                vantagem competitiva necessária para aumentar suas vendas de
+                maneira eficiente e consistente.
               </p>
             </div>
             <a
@@ -42,6 +45,8 @@ export default function Home() {
             <Image src={About} alt="hero" className="object-cover"></Image>
           </div>
         </div>
+
+        <Footer />
       </main>
     </>
   );

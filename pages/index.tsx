@@ -4,7 +4,8 @@ import Image from "next/image";
 import Hero from "../public/img/hero.png";
 import Social from "../public/img/socialmedia.jpg";
 import Trafego from "../public/img/trafego.jpg";
-import ImageModal from "@/src/ImageModal";
+import Footer from "@/src/Footer";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -67,85 +68,66 @@ export default function Home() {
           trabalho aos olhos certos.
         </h1>
         <div className="lg:flex relative w-full lg:space-x-6 space-y-6 lg:space-y-0 lg:pt-16 pt-4">
-          <div className="overflow-hidden shadow-lg lg:w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
-            <div className="p-6 flex flex-col w-full justify-center">
-              <Image
-                src={Trafego}
-                alt="Card background"
-                fill
-                className="object-cover -z-30"
-              />
-              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
-                Criação de Sites Profissionais
-              </h2>
-              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
-              Hoje, mais do que nunca, a presença online é vital para o sucesso de qualquer negócio e um site permite construir uma
-                presença forte e positiva online. <br />
-              Se destaque na web sendo facilmente encontrado por um cliente em potencial.
-              </h3>
+          <Link href="/sites" legacyBehavior>
+            <div className="overflow-hidden shadow-lg lg:w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
+              <div className="p-6 flex flex-col w-full justify-center cursor-pointer">
+                <Image
+                  src={Trafego}
+                  alt="Card background"
+                  fill
+                  className="object-cover -z-30"
+                />
+                <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
+                  Criação de Sites Profissionais
+                </h2>
+                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
+                  Hoje, mais do que nunca, a presença online é vital para o
+                  sucesso de qualquer negócio e um site permite construir uma
+                  presença forte e positiva online. <br />
+                  Se destaque na web sendo facilmente encontrado por um cliente
+                  em potencial.
+                </h3>
+              </div>
             </div>
-          </div>
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl lg:w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
-            <div className="p-6 flex flex-col w-full justify-center">
-              <Image
-                src={Social}
-                alt="Card background"
-                fill
-                className="object-cover -z-30"
-              />
-              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
-                Gerenciamento de Mídia Social
-              </h2>
-              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
-                Criar um conteúdo de qualidade e que ajude a transmitir os
-                valores da sua empresa é fundamental no marketing digital. 
-                <br />
-                Permita que seu Facebook e Instagram reflitam a qualidade do seu
-                trabalho.
-              </h3>
+          </Link>
+          <Link href="/social" legacyBehavior>
+            <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl lg:w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
+              <div className="p-6 flex flex-col w-full justify-center cursor-pointer">
+                <Image
+                  src={Social}
+                  alt="Card background"
+                  fill
+                  className="object-cover -z-30"
+                />
+                <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
+                  Gerenciamento de Mídia Social
+                </h2>
+                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
+                  Criar um conteúdo de qualidade e que ajude a transmitir os
+                  valores da sua empresa é fundamental no marketing digital.
+                  <br />
+                  Permita que seu Facebook e Instagram reflitam a qualidade do
+                  seu trabalho.
+                </h3>
+              </div>
             </div>
-          </div>
+          </Link>
         </div>
       </div>
-      <ImageModal />
-      <div className="flex bg-clr2 w-full justify-center font-avenirheavy text-xl">
-        <div className="w-fit text-center pt-8 px-12 text-clr4 rounded-xl space-y-1 lg:w-3/12">
-          <h2 className="text-3xl mb-4 font-avenirheavy">Fale Conosco</h2>
-          <a
-            href="https://wa.me/5512981622637"
-            target="blank"
-            className="flex justify-center space-x-2 items-center hover:text-clr3 cursor-pointer"
-          >
-            <svg
-              fill="currentColor"
-              viewBox="0 0 16 16"
-              height="1em"
-              width="1em"
-            >
-              <path d="M13.601 2.326A7.854 7.854 0 007.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 003.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0013.6 2.326zM7.994 14.521a6.573 6.573 0 01-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 01-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 014.66 1.931 6.557 6.557 0 011.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 00-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z" />
-            </svg>
-            <h2>(12) 98162-2637</h2>
-          </a>
-          <a
-            href="mailto:torodandigital@gmail.com"
-            target="blank"
-            className="flex justify-center space-x-2 items-center hover:text-clr3 cursor-pointer"
-          >
-            <svg
-              viewBox="0 0 1024 1024"
-              fill="currentColor"
-              height="1em"
-              width="1em"
-            >
-              <path d="M928 160H96c-17.7 0-32 14.3-32 32v640c0 17.7 14.3 32 32 32h832c17.7 0 32-14.3 32-32V192c0-17.7-14.3-32-32-32zm-80.8 108.9L531.7 514.4c-7.8 6.1-18.7 6.1-26.5 0L189.6 268.9A7.2 7.2 0 01194 256h648.8a7.2 7.2 0 014.4 12.9z" />
-            </svg>
-            <h2>torodandigital@gmail.com</h2>
-          </a>
-          <h2 className="pt-4 text-xs pb-2 font-avenirbook">
-            All rights reserved © 2023
-          </h2>
+
+      {/*  Nosso processo de trabalho   */}
+
+      <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
+        <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-12 pb-6">
+          Em poucos passos sua{" "}
+          <span className="font-acc italic font-thin">presença na web</span>{" "}
+          evolui muito.
+        </h1>
+        <div className="lg:flex justify-evenly">
+          <div className="flex flex-col lg:w-1/2 lg:items-center"></div>
         </div>
       </div>
+      <Footer />
     </>
   );
 }

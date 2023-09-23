@@ -32,17 +32,23 @@ const Navbar = () => {
                   Home
                 </a>
               </Link>
-              <Link href="/about" legacyBehavior>
+              <Link href="/sites" legacyBehavior>
                 <a className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium">
-                  Sobre
+                  Web Site
+                </a>
+              </Link>
+              <Link href="/social" legacyBehavior>
+                <a className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium">
+                  Mídia Social
                 </a>
               </Link>
 
-              <Link href="/contact" legacyBehavior>
-                <a className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium">
-                  Fale Conosco
-                </a>
-              </Link>
+              <a
+                href="https://wa.me/5512981622637"
+                className="text-clr2 hover:bg-clr1 hover:text-clr4 px-3 py-2 rounded-md font-medium"
+              >
+                Fale Conosco
+              </a>
             </div>
           </div>
           <div className="-mr-2 flex md:hidden">
@@ -99,22 +105,30 @@ const Navbar = () => {
               Home
             </a>
           </Link>
-          <Link href="/about" legacyBehavior>
+          <Link href="/sites" legacyBehavior>
             <a
               className="text-clr4 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleNavbar}
             >
-              Sobre
+              Web Site
             </a>
           </Link>
-          <Link href="/contact" legacyBehavior>
+          <Link href="/social" legacyBehavior>
             <a
               className="text-clr4 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
               onClick={toggleNavbar}
             >
-              Fale Conosco
+              Mídia Social
             </a>
           </Link>
+
+          <a
+            href="https://wa.me/5512981622637"
+            className="text-clr4 hover:bg-clr1 hover:text-white block px-3 py-2 rounded-md text-base font-medium"
+            onClick={toggleNavbar}
+          >
+            Fale Conosco
+          </a>
         </div>
       </div>
     </nav>
