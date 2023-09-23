@@ -31,7 +31,7 @@ export default function Home() {
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
                 Que tal{" "}
                 <span className="font-acc italic font-thin">
-                  alcançar seus clientes
+                  ser descoberto
                 </span>{" "}
                 de uma maneira moderna?
               </h1>
@@ -40,9 +40,10 @@ export default function Home() {
             <div className="flex">
               <p className="text-xl font-avenirbook mt-6 leading-8 lg:leading-10">
                 A Torodan apresenta as melhores soluções para a inclusão do seu
-                negócio no mercado digital. Através de engenharias
-                de marketing modernas, garantimos uma presença online segura e voltada
-                para resultados reais. Permita ser encontrado na web de maneira inteligente e fácil.
+                negócio no mercado digital. Através de engenharias de marketing
+                modernas, garantimos uma presença online segura e voltada para
+                resultados reais. Permita ser encontrado na web de maneira
+                inteligente e fácil.
               </p>
             </div>
             <a
@@ -63,10 +64,28 @@ export default function Home() {
         <h1 className="text-4xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
           Nossa meta: trazer sua empresa para o{" "}
           <span className="font-acc italic font-thin">digital</span> levando seu
-          imóvel aos olhos certos.
+          trabalho aos olhos certos.
         </h1>
         <div className="lg:flex relative w-full lg:space-x-6 space-y-6 lg:space-y-0 lg:pt-16 pt-4">
           <div className="overflow-hidden shadow-lg lg:w-1/2 rounded-2xl hover:shadow-2xl transition duration-500 ease-in-out transform hover:text-clr3">
+            <div className="p-6 flex flex-col w-full justify-center">
+              <Image
+                src={Trafego}
+                alt="Card background"
+                fill
+                className="object-cover -z-30"
+              />
+              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
+                Criação de Sites Profissionais
+              </h2>
+              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
+              Hoje, mais do que nunca, a presença online é vital para o sucesso de qualquer negócio e um site permite construir uma
+                presença forte e positiva online. <br />
+              Se destaque na web sendo facilmente encontrado por um cliente em potencial.
+              </h3>
+            </div>
+          </div>
+          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl lg:w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
             <div className="p-6 flex flex-col w-full justify-center">
               <Image
                 src={Social}
@@ -79,33 +98,10 @@ export default function Home() {
               </h2>
               <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
                 Criar um conteúdo de qualidade e que ajude a transmitir os
-                valores da sua empresa é fundamental no marketing digital
-                imobiliário. Além de engajar potenciais clientes também permite
-                construir uma presença forte e positiva online.
+                valores da sua empresa é fundamental no marketing digital. 
                 <br />
                 Permita que seu Facebook e Instagram reflitam a qualidade do seu
                 trabalho.
-              </h3>
-            </div>
-          </div>
-          <div className="overflow-hidden shadow-lg rounded-2xl hover:shadow-2xl lg:w-1/2 transition duration-500 ease-in-out transform hover:text-clr3">
-            <div className="p-6 flex flex-col w-full justify-center">
-              <Image
-                src={Trafego}
-                alt="Card background"
-                fill
-                className="object-cover -z-30"
-              />
-              <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
-                Campanhas de Tráfego Pago
-              </h2>
-              <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
-                Investir em anúncios pagos é a melhor maneira de gerar leads
-                interessados e qualificados para seu imóvel. Quando bem aplicada
-                a estratégia permite otimizar o investimento, segmentando o
-                público-alvo para determinado empreendimento. Nós da Torodan
-                valorizamos seu anúncio e acompanhamos as métricas diariamente,
-                sempre aprimorando pelos melhores resultados.
               </h3>
             </div>
           </div>
