@@ -118,13 +118,47 @@ export default function Home() {
       {/*  Nosso processo de trabalho   */}
 
       <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
-        <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-12 pb-6">
+        <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-16 pb-6">
           Em poucos passos sua{" "}
           <span className="font-acc italic font-thin">presença na web</span>{" "}
           evolui muito.
         </h1>
-        <div className="lg:flex justify-evenly">
-          <div className="flex flex-col lg:w-1/2 lg:items-center"></div>
+        <div className="space-y-10">
+          <div className="flex flex-col lg:items-center">
+            <div className="flex text-4xl mb-2">
+              <h1 className="font-acc pr-3">1</h1>
+              <h2>Briefing</h2>
+            </div>
+            <p>Uma conversa para planejarmos o projeto</p>
+          </div>
+          <div className="flex flex-col lg:items-center">
+            <div className="flex text-4xl mb-2">
+              <h1 className="font-acc pr-3">2</h1>
+              <h2>Design</h2>
+            </div>
+            <p>Para deixar o site com a sua cara</p>
+          </div>
+          <div className="flex flex-col lg:items-center">
+            <div className="flex text-4xl mb-2">
+              <h1 className="font-acc pr-3">3</h1>
+              <h2>Programação</h2>
+            </div>
+            <p>Onde seu site ganha vida!</p>
+          </div>
+          <div className="flex flex-col lg:items-center">
+            <div className="flex text-4xl mb-2">
+              <h1 className="font-acc pr-3">4</h1>
+              <h2>Responsividade</h2>
+            </div>
+            <p>Para o site funcionar bem no celular, tablet ou desktop</p>
+          </div>
+          <div className="flex flex-col lg:items-center">
+            <div className="flex text-4xl mb-2">
+              <h1 className="font-acc pr-3">5</h1>
+              <h2>Entrega</h2>
+            </div>
+            <p>Hora de lançar seu site para toda web!</p>
+          </div>
         </div>
       </div>
       <Footer />
