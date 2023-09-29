@@ -26,7 +26,7 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex min-h-screen bg-clr4 pt-32 px-4 lg:px-28 pb-12">
+        <div className="lg:flex min-h-screen bg-clr4 pt-32 px-4 lg:px-28 lg:pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
@@ -77,10 +77,10 @@ export default function Home() {
                   fill
                   className="object-cover -z-30"
                 />
-                <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
+                <h2 className="font-bold text-4xl lg:text-6xl mb-5 lg:px-14 lg:pt-36 pt-10">
                   Criação de Sites Profissionais
                 </h2>
-                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
+                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-14 pb-10 lg:pb-36">
                   Hoje, mais do que nunca, a presença online é vital para o
                   sucesso de qualquer negócio e um site permite construir uma
                   presença forte e positiva online. <br />
@@ -99,10 +99,10 @@ export default function Home() {
                   fill
                   className="object-cover -z-30"
                 />
-                <h2 className="font-bold text-4xl lg:text-7xl mb-4 lg:px-20 lg:pt-36 pt-10">
+                <h2 className="font-bold text-4xl lg:text-6xl mb-5 lg:px-14 lg:pt-36 pt-10">
                   Gerenciamento de Mídia Social
                 </h2>
-                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-20 pb-10 lg:pb-36">
+                <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-14 pb-10 lg:pb-36">
                   Criar um conteúdo de qualidade e que ajude a transmitir os
                   valores da sua empresa é fundamental no marketing digital.
                   <br />
@@ -120,40 +120,40 @@ export default function Home() {
       <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
         <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-16 pb-6">
           Em poucos passos sua{" "}
-          <span className="font-acc italic font-thin">presença na web</span>{" "}
+          <span className="font-acc italic font-thin">imagem na web</span>{" "}
           evolui muito.
         </h1>
         <div className="space-y-10">
           <div className="flex flex-col lg:items-center">
-            <div className="flex text-4xl mb-2">
+            <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">1</h1>
               <h2>Briefing</h2>
             </div>
             <p>Uma conversa para planejarmos o projeto</p>
           </div>
           <div className="flex flex-col lg:items-center">
-            <div className="flex text-4xl mb-2">
+            <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">2</h1>
               <h2>Design</h2>
             </div>
             <p>Para deixar o site com a sua cara</p>
           </div>
           <div className="flex flex-col lg:items-center">
-            <div className="flex text-4xl mb-2">
+            <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">3</h1>
               <h2>Programação</h2>
             </div>
             <p>Onde seu site ganha vida!</p>
           </div>
           <div className="flex flex-col lg:items-center">
-            <div className="flex text-4xl mb-2">
+            <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">4</h1>
               <h2>Responsividade</h2>
             </div>
             <p>Para o site funcionar bem no celular, tablet ou desktop</p>
           </div>
           <div className="flex flex-col lg:items-center">
-            <div className="flex text-4xl mb-2">
+            <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">5</h1>
               <h2>Entrega</h2>
             </div>

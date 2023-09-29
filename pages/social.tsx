@@ -9,7 +9,7 @@ export default function Social() {
     <>
       <main className="flex flex-col text-clr4 font-avenirbook">
         <Navbar />
-        <div className="lg:flex min-h-screen bg-clr2 pt-32 px-4 lg:px-28 pb-12">
+        <div className="lg:flex min-h-screen bg-clr2 pt-32 px-4 lg:px-28 lg:pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
               <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
