@@ -28,13 +28,8 @@ export default function Social() {
             <div className="bg-clr4 h-0.5 rounded-md mb-2 lg:mt-10" />
             <div className="flex">
               <p className="text-xl font-avenirbook mt-6 leading-8 lg:leading-10">
-                Nossa proposta é um serviço que ofereça as melhores ferramentas
-                de marketing digital, como anúncios em mídias sociais, campanhas
-                de e-mail e otimização de mecanismos de busca (SEO), somadas as
-                melhores campanhas em plataformas de tráfego pago. <br />
-                Com nossos serviços de alta qualidade, seu negócio terá a
-                vantagem competitiva necessária para aumentar suas vendas de
-                maneira eficiente e consistente.
+                Já pensou um espaço organizado, profissional e com um design único para apresentar seu trabalho?<br />
+                Um site oferece tudo isso de maneira personalizada, além de ser uma ferramenta moderna fundamental para alcance e comunicação. Na Torodan, dispomos de várias estratégias de otimização de mecanismos de pesquisa (SEO, Search Engine Optimization) para bom posicionamento nas buscas, facilitando e muito para que seus futuros clientes te descubram.
               </p>
             </div>
             <a
@@ -60,7 +55,7 @@ export default function Social() {
               <Image src={Site1} alt="stories" className="object-cover" />
               <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
                 <a
-                  href="https://www.behance.net/torodan"
+                  href="https://pedrohenriquelima.com.br"
                   target="blank"
                   className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
                 >

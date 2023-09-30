@@ -29,7 +29,7 @@ export default function Social() {
                 melhores campanhas em plataformas de tráfego pago. <br />
                 Com nossos serviços de alta qualidade, seu negócio terá a
                 vantagem competitiva necessária para aumentar suas vendas de
-                maneira eficiente e consistente.
+                maneira eficiente.
               </p>
             </div>
             <a

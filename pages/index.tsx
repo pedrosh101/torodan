@@ -82,8 +82,7 @@ export default function Home() {
                 </h2>
                 <h3 className="font-semibold tracking-wide text-xl lg:text-2xl lg:px-14 pb-10 lg:pb-36">
                   Hoje, mais do que nunca, a presença online é vital para o
-                  sucesso de qualquer negócio e um site permite construir uma
-                  presença forte e positiva online. <br />
+                  sucesso de qualquer negócio. E um site te permite construir isso de maneira inteligente e profissional. <br />
                   Se destaque na web sendo facilmente encontrado por um cliente
                   em potencial.
                 </h3>
@@ -106,7 +105,7 @@ export default function Home() {
                   Criar um conteúdo de qualidade e que ajude a transmitir os
                   valores da sua empresa é fundamental no marketing digital.
                   <br />
-                  Permita que seu Facebook e Instagram reflitam a qualidade do
+                  Permita que suas redes sociais reflitam a qualidade do
                   seu trabalho.
                 </h3>
               </div>
@@ -136,14 +135,14 @@ export default function Home() {
               <h1 className="font-acc pr-3">2</h1>
               <h2>Design</h2>
             </div>
-            <p>Para deixar o site com a sua cara</p>
+            <p>Para deixar o site sob medida e com a cara do seu negócio</p>
           </div>
           <div className="flex flex-col lg:items-center">
             <div className="flex lg:text-4xl text-3xl mb-2">
               <h1 className="font-acc pr-3">3</h1>
               <h2>Programação</h2>
             </div>
-            <p>Onde seu site ganha vida!</p>
+            <p>Aqui seu site ganha vida com códigos otimizados</p>
           </div>
           <div className="flex flex-col lg:items-center">
             <div className="flex lg:text-4xl text-3xl mb-2">
@@ -157,7 +156,7 @@ export default function Home() {
               <h1 className="font-acc pr-3">5</h1>
               <h2>Entrega</h2>
             </div>
-            <p>Hora de lançar seu site para toda web!</p>
+            <p>Hora do lançamento!</p>
           </div>
         </div>
       </div>
