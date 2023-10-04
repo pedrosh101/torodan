@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
           name="description"
-          content="Traga sua imobiliária para as mídias sociais."
+          content="Traga seu negócio para a web."
         />
         <meta
           name="keywords"
