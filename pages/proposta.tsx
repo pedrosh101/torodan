@@ -67,7 +67,7 @@ export default function Social() {
           </p>
           <h1 className="underline underline-offset-4">4. Orçamento</h1>
           <p>
-          O valor total para nossos projetos é de R$ 1500, podendo ser pago em até três parcelas iguais. Adicionalmente, para meses em que forem necessárias manutenções, será aplicada uma taxa de R$ 50 por mês. Oferecemos também um desconto de 8% para pagamento à vista.
+          O valor total para nossos projetos configura uma média de R$ 1200, podendo ser pago em até quatro parcelas iguais. Adicionalmente, para meses em que manutenções forem requisitadas pelo cliente, será aplicada uma taxa de R$ 50 por mês. Oferecemos também um desconto de 8% para pagamento à vista.
           </p>
           <h1 className="underline underline-offset-4">
             5. Compromisso com a Qualidade
