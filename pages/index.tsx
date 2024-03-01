@@ -26,10 +26,10 @@ export default function Home() {
       </Head>
       <main className="flex flex-col text-clr2 font-avenirbook">
         <Navbar />
-        <div className="lg:flex min-h-screen bg-clr4 pt-32 px-4 lg:px-28 lg:pb-12">
+        <div className="lg:flex min-h-screen bg-clr4 pt-28 px-4 lg:px-28 lg:pb-12">
           <div className="flex flex-col text-2xl text-left font-semibold lg:w-3/5 align-middle content-center justify-center lg:pr-24">
             <div className="lg:flex justify-between">
-              <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-8">
+              <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-0 pb-6">
                 Que tal{" "}
                 <span className="font-acc italic font-thin">
                   ser descoberto
@@ -37,7 +37,7 @@ export default function Home() {
                 de uma maneira moderna?
               </h1>
             </div>
-            <div className="bg-clr2 h-0.5 rounded-md mb-2 lg:mt-10" />
+            <div className="bg-clr2 h-0.5 rounded-md lg:mt-10" />
             <div className="flex">
               <p className="text-xl font-avenirbook mt-6 leading-8 lg:leading-10">
                 A Torodan apresenta as melhores soluções para a inclusão do seu
@@ -61,8 +61,8 @@ export default function Home() {
         </div>
       </main>
 
-      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:py-28 pt-12 px-4 lg:px-28 pb-4">
-        <h1 className="text-4xl lg:text-5xl lg:leading-12 lg:pb-0 pb-8">
+      <div className="flex flex-col text-clr4 font-avenirbook min-h-screen bg-clr2 lg:py-28 py-12 px-4 lg:px-28">
+        <h1 className="text-4xl lg:text-5xl lg:leading-12">
           Nossa meta: trazer sua empresa para o{" "}
           <span className="font-acc italic font-thin">digital</span> levando seu
           trabalho aos olhos certos.

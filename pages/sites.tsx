@@ -7,6 +7,7 @@ import Site3 from "../public/img/site3.jpg";
 import Web from "../public/img/web.png";
 
 import Footer from "@/src/Footer";
+import Link from "next/link";
 
 export default function Social() {
   return (
@@ -28,8 +29,11 @@ export default function Social() {
             <div className="bg-clr4 h-0.5 rounded-md mb-2 lg:mt-10" />
             <div className="flex">
               <p className="text-xl font-avenirbook mt-6 leading-8 lg:leading-10">
-                Já pensou um espaço organizado, profissional e com um design único para apresentar seu trabalho?<br />
-                Um site oferece tudo isso de maneira personalizada, além de ser uma ferramenta moderna fundamental para alcance e comunicação. Na Torodan, dispomos de várias estratégias de otimização de mecanismos de pesquisa (SEO, Search Engine Optimization) para bom posicionamento nas buscas, facilitando e muito para que seus futuros clientes te descubram.
+                Já pensou um espaço organizado, profissional e com um design
+                único para apresentar seu trabalho?
+                <br />
+                Um site oferece tudo isso de maneira personalizada, além de ser
+                uma ferramenta moderna fundamental para alcance e comunicação.
               </p>
             </div>
             <a
@@ -44,51 +48,66 @@ export default function Social() {
             <Image src={Web} alt="hero" className="object-cover"></Image>
           </div>
         </div>
-        <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl py-12 lg:py-24">
-          <h1 className="text-4xl lg:text-6xl lg:leading-12 lg:pb-14 pb-6">
+        <div className="flex flex-col px-4 lg:px-28 bg-clr4 text-clr2 font-avenirbook text-2xl lg:py-16 py-10">
+          <h1 className="text-4xl lg:text-6xl lg:leading-12 pb-10 lg:pb-16">
             Tenha um{" "}
             <span className="font-acc italic font-thin">site diferenciado</span>{" "}
             que se destaque na web.
           </h1>
-          <div className="lg:flex justify-evenly pb-20">
-            <div className="flex flex-col lg:w-1/2 lg:items-center">
-              <Image src={Site1} alt="stories" className="object-cover" />
-              <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
-                <a
-                  href="https://pedrohenriquelima.com.br"
-                  target="blank"
-                  className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
-                >
-                  Site de Desenvolvedor
-                </a>
+
+          <div className="space-y-10 lg:space-y-20">
+            {/* site1 */}
+            <div className="lg:flex justify-evenly">
+              <div className="flex flex-col lg:w-1/2 items-center">
+                <Link href="https://pedrohenriquelima.com.br" target="_blank">
+                  <Image src={Site1} alt="stories" className="object-cover" />
+                </Link>
+                <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
+                  <Link
+                    href="https://pedrohenriquelima.com.br"
+                    target="blank"
+                    className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
+                  >
+                    Site de Desenvolvedor
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="lg:flex justify-evenly pb-20">
-            <div className="flex flex-col lg:w-1/2 lg:items-center">
-              <Image src={Site2} alt="stories" className="object-cover" />
-              <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
-                <a
+            {/* site2 */}
+            <div className="lg:flex justify-evenly">
+              <div className="flex flex-col lg:w-1/2 items-center">
+                <Link
                   href="https://photographgrid.netlify.app/"
-                  target="blank"
-                  className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
+                  target="_blank"
                 >
-                  Site de Fotografia
-                </a>
+                  <Image src={Site2} alt="stories" className="object-cover" />
+                </Link>
+                <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
+                  <Link
+                    href="https://photographgrid.netlify.app/"
+                    target="blank"
+                    className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
+                  >
+                    Site de Fotografia
+                  </Link>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="lg:flex justify-evenly">
-            <div className="flex flex-col lg:w-1/2 lg:items-center">
-              <Image src={Site3} alt="stories" className="object-cover" />
-              <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
-                <a
-                  href="https://beautyspavp.com.br/"
-                  target="blank"
-                  className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
-                >
-                  Beauty Spa
-                </a>
+            {/* site3 */}
+            <div className="lg:flex justify-evenly">
+              <div className="flex flex-col lg:w-1/2 items-center">
+                <Link href="https://beautyspavp.com.br/" target="_blank">
+                  <Image src={Site3} alt="stories" className="object-cover" />
+                </Link>
+                <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
+                  <Link
+                    href="https://beautyspavp.com.br/"
+                    target="blank"
+                    className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
+                  >
+                    Beauty Spa
+                  </Link>
+                </div>
               </div>
             </div>
           </div>
