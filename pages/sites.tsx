@@ -3,6 +3,7 @@ import Image from "next/image";
 
 import Site1 from "../public/img/site1.jpg";
 import Site2 from "../public/img/site2.jpg";
+import Site3 from "../public/img/site3.jpg";
 import Web from "../public/img/web.png";
 
 import Footer from "@/src/Footer";
@@ -76,7 +77,7 @@ export default function Social() {
             <div className="lg:flex justify-evenly">
               <div className="flex flex-col lg:w-1/2 items-center">
                 <Link
-                  href="https://estudiomasca.netlify.app/"
+                  href="https://estudiomasca.com"
                   target="_blank"
                 >
                   <Image src={Site2} alt="stories" className="object-cover" />
@@ -88,6 +89,26 @@ export default function Social() {
                     className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
                   >
                     Estúdio Masca
+                  </Link>
+                </div>
+              </div>
+            </div>
+            {/* site3 */}
+            <div className="lg:flex justify-evenly">
+              <div className="flex flex-col lg:w-1/2 items-center">
+                <Link
+                  href="https://viggianiarquitetura.netlify.app/"
+                  target="_blank"
+                >
+                  <Image src={Site3} alt="stories" className="object-cover" />
+                </Link>
+                <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
+                  <Link
+                    href="https://viggianiarquitetura.netlify.app/"
+                    target="blank"
+                    className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
+                  >
+                    Viggiani Arquitetura
                   </Link>
                   <p className="text-center text-base mt-2">(em construção)</p>
                 </div>
