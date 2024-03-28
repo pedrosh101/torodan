@@ -77,14 +77,14 @@ export default function Social() {
             <div className="lg:flex justify-evenly">
               <div className="flex flex-col lg:w-1/2 items-center">
                 <Link
-                  href="https://estudiomasca.com"
+                  href="www.estudiomasca.com"
                   target="_blank"
                 >
                   <Image src={Site2} alt="stories" className="object-cover" />
                 </Link>
                 <div className="flex flex-col text-2xl text-left font-semibold lg:w-2/5 w-4/6">
                   <Link
-                    href="https://estudiomasca.com"
+                    href="www.estudiomasca.com"
                     target="blank"
                     className="bg-clr1 hover:bg-clr2 text-clr4 font-bold py-3 mt-6 lg:mt-10 text-xl lg:text-2xl rounded text-center"
                   >
